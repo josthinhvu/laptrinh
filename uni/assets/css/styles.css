@@ -1,0 +1,120 @@
+/* KHAI BÁO STYLES CỦA CLASS VÀ TAG */
+.header{
+
+}
+/* khai báo biến, để thay đổi 1 lần cho đồng bộ nè */
+:root{
+--primary: blue;
+--secondary: red;
+--white: fff;
+--text-base: blue;
+--text-heading: blue;
+--layout-white: white;
+--layout-darker: white;
+--layout-aibik: white;
+}
+
+.container-fluid{
+    width: 100%;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+/* set cùng lúc nhiều Tag */
+h1,h2,h3,h4,h5,h6,p,a{
+    text-decoration: none;
+}
+
+
+.nav{
+/* Flexbox or Grid */
+height: 72px; width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0px 0px 10px var(--primary);
+position: relative;
+
+}
+
+.article{
+    width: 30%;
+}    
+
+
+/* set cho cả tag luôn nè */
+
+h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.heading  {
+    margin-bottom: 30px;
+
+}
+
+.menu-box {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+/* phải truyền thẳng vào cái menu-item, nên phải chồng class vào nhau. Đó là bí thuật, ta gọi là BEM */
+.menu .menu-item {
+margin-right: 10px;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero .banner img{
+    width: 300px;
+
+
+}
+/* select cả tag section */
+section{
+    /* 100vh nghĩa là vừa đầy tràn màn hình */
+    height: 100vh;
+}
+
+.section-light{
+    background-color: var(--layout-white);
+}
+
+.section-dark{
+    background-color: var(--layout-darker);
+}
+
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.box{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 100px;
+
+}
